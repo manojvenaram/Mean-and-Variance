@@ -89,6 +89,6 @@ print("STANDARD DEVIATION: %.3f"%sd)
 ```
 
 # Output :
-![](exp1.png)
+![](image.png)
 # Results  
-The Mean and variance of arrivals of objects from feeder using probability distribution is calculated. 
+The Mean and variance of arrivals of objects from feeder using probability distribution are calculated. 
