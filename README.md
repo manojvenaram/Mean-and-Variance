@@ -48,8 +48,44 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
+```
+import numpy as np
+L=[int(i) for i in input().split()]
+N=len(L)
+M=max(L)
+x=list()
+f=list()
+for i in range(M+1):
+  c=0
+  for j in range(N):
+    if L[j]==i:
+      c+=1
+  f.append(c)
+  x.append(i)
+# print(f,x)
+sf=np.sum(f)
+print(sf)
+p=list()
+for i in range(M+1):
+  p.append(f[i]/sf)
+k=w=0
 
+for i in range(M+1):
+  k+=x[i]*p[i]
+print("MEAN %.3f: "%k)
+for i in range(M+1):
+  w+=((x[i]**2)*p[i])
+print("E(X^2) %.3f: "%w)
+# mean=np.inner(x,p)
+# EXP2=np.inner(x,p)
+# var=EXP2-mean**2
+var=w-k**2
+print("VARIANCE %.3f: "%var)
+sd=np.sqrt(var)
+print("STANDARD DEVIATION: %.3f"%sd)
+```
 
 
 
 # Results and Output : 
+![](1.png)
