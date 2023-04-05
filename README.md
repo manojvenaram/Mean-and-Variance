@@ -83,6 +83,7 @@ var=w-k**2
 print("VARIANCE %.3f: "%var)
 sd=np.sqrt(var)
 print("STANDARD DEVIATION: %.3f"%sd)
+
 ```
 
 
